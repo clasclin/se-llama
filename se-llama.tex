@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, inner=3.8cm, outer=3.8cm, top=2cm, bottom=2cm]{geometry}
+
+\newcommand{\firma}[1]{\flushright{#1}}
+\newcommand{\titlename}[1]{ 
+  { 
+    \begin{center}
+      \setcounter{secnumdepth}{-1} \section{\sc{#1}}
+      \vspace{0.5cm}
+    \end{center}
+  }
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\include{titulo}
+\pagenumbering{arabic}
+
+\tableofcontents
+
+\include{novela}
+\include{madrugada}
+\include{carta-gris}
+\include{llaves}
+\include{dia-gris}
+\include{martes-13}
+\include{jarron}
+\include{angustia}
+\include{muerte}
+\include{me-fui}
+\include{guerra-tacita}
+\include{domingo}
+\include{lucia}
+
+\end{document}
